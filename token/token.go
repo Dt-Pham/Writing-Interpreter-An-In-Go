@@ -32,8 +32,21 @@ const (
 	FUNCTION = "FUNCTION"
 )
 
+var keywords = map[string]TokenType{
+	"let": LET,
+	"fn":  FUNCTION,
+}
+
 // Token struct int Monkey Programming Language
 type Token struct {
 	Type    TokenType
 	Literal string
+}
+
+// LookupIdent ...
+func LookupIdent(ident string) TokenType {
+	if tok, ok := keywords[ident]; ok {
+		return tok
+	}
+	return IDENT
 }
