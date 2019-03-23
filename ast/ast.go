@@ -1,6 +1,6 @@
 package ast
 
-import "Writing-Interpreter-In-Go/token"
+import "monkey/token"
 
 // Node ...
 type Node interface {

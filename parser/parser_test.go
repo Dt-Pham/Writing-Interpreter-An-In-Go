@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"Writing-Interpreter-In-Go/ast"
-	"Writing-Interpreter-In-Go/lexer"
+	"monkey/ast"
+	"monkey/lexer"
 	"testing"
 )
 
@@ -10,7 +10,7 @@ func TestLetStatement(t *testing.T) {
 	input := `
 	let x = 5;
 	let y = 10;
-	let foobar = 838383
+	let foobar = 838383;
 	`
 
 	l := lexer.New(input)

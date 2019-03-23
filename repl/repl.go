@@ -1,11 +1,11 @@
 package repl
 
 import (
-	"Writing-Interpreter-In-Go/lexer"
-	"Writing-Interpreter-In-Go/token"
 	"bufio"
 	"fmt"
 	"io"
+	"monkey/lexer"
+	"monkey/token"
 )
 
 // PROMPT ...

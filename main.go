@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Writing-Interpreter-In-Go/repl"
 	"fmt"
+	"monkey/repl"
 	"os"
 	"os/user"
 )
