@@ -134,3 +134,18 @@ func (i *Identifier) TokenLiteral() string {
 func (i *Identifier) String() string {
 	return i.Value
 }
+
+// IntegerLiteral ...
+type IntegerLiteral struct {
+	Token token.Token // the INT token
+	Value int64
+}
+
+// TokenLiteral ...
+func (il *IntegerLiteral) TokenLiteral() string {
+	return il.Token.Literal
+}
+
+func (il *IntegerLiteral) String() string {
+	return il.Token.Literal
+}
